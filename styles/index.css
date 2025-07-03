@@ -1,0 +1,49 @@
+html,body {}
+#wrap {
+    width:100%;
+    max-width:1920px;
+    margin:0 auto;
+    
+}
+#wrap header {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 105px 0;
+    background:aqua;
+}
+#wrap header h1 {
+}
+#wrap header h1 a {}
+#wrap header h1 a img {}
+#wrap header nav {}
+#wrap header nav .gnb {
+    background:pink;
+    display:flex;
+    flex-flow:row nowrap;
+    gap:50px; 
+}
+#wrap header nav .gnb > li {
+    
+}
+#wrap header nav .gnb > li > a {}
+#wrap header nav .gnb > li .lnb_bg {
+}
+#wrap header nav .gnb > li .lnb_depth {/* 임시값... */
+    position: absolute;
+    top:100%;
+    left:0;
+    width:200px;
+    background: #fff;
+    border:1px solid #eee;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    display:none;
+    z-index:100;
+}
+#wrap header nav .gnb > li .lnb_depth li {}
+#wrap header nav .gnb > li .lnb_depth li > a {}
+#wrap header .right_menu {}
+#wrap header .right_menu li {}
+#wrap header .right_menu li a {}
+#wrap header .right_menu li a img {}
+/* main부터 선택자 이어적으면 됨~~! */
