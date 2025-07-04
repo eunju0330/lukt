@@ -1,49 +1,123 @@
-html,body {}
+html,body {font-family:'Pretendard', sans-serif;}
 #wrap {
     width:100%;
     max-width:1920px;
     margin:0 auto;
     
 }
-#wrap header {
+#wrap main {}
+/* 1.광고배너 */
+#wrap main .ad_wrap {}
+#wrap main .ad_wrap .swiper {}
+#wrap main .ad_wrap .swiper.adSwiper {position:relative;}
+#wrap main .ad_wrap .swiper.adSwiper .swiper-wrapper {position:relative;}
+#wrap main .ad_wrap .swiper.adSwiper .swiper-wrapper .swiper-slide {
+    position:relative;
+    width:100%;
+    height:845px;
+    background-size:cover;
+    background-position:center;
+}
+#wrap main .ad_wrap .swiper.adSwiper .swiper-wrapper .swiper-slide.slide1 {
+    background:url(../images/hd_slide001.jpg);
+}
+#wrap main .ad_wrap .swiper.adSwiper .swiper-wrapper .swiper-slide.slide2 {
+    background:url(../images/hd_slide001.jpg);
+}
+#wrap main .ad_wrap .swiper.adSwiper .swiper-wrapper .swiper-slide .ad_txt {
+    position:absolute;
+    top:444px;
+    left:0;
+    display:flex; align-items:flex-start;
+    gap:32px;
+}
+#wrap main .ad_wrap .swiper.adSwiper .swiper-wrapper .swiper-slide .ad_txt .ad_line {
+    width:195px; height:1px; background:#000; margin-top:5px;
+}
+
+#wrap main .ad_wrap .swiper.adSwiper .swiper-wrapper .swiper-slide .ad_txt .txt_area {}
+#wrap main .ad_wrap .swiper.adSwiper .swiper-wrapper .swiper-slide .ad_txt .txt_area h2 {
+    font-size:2.188rem; font-weight:600;
+    margin-bottom:17px;
+}
+#wrap main .ad_wrap .swiper.adSwiper .swiper-wrapper .swiper-slide .ad_txt .txt_area p {
+    font-size:1.375rem; font-weight:300;
+    line-height:180%;
+}
+#wrap main .ad_wrap .swiper.adSwiper .btn_counter {
+    position:absolute;
+    bottom:193px;
+    left:230px;
+    z-index:10;
     display:flex;
-    justify-content:space-between;
     align-items:center;
-    padding:15px 105px 0;
-    background:aqua;
+    gap:10px;
+    color:#000;
 }
-#wrap header h1 {
+#wrap main .ad_wrap .swiper.adSwiper .btn_counter img {
+    vertical-align: middle;
 }
-#wrap header h1 a {}
-#wrap header h1 a img {}
-#wrap header nav {}
-#wrap header nav .gnb {
-    background:pink;
-    display:flex;
-    flex-flow:row nowrap;
-    gap:50px;
+#wrap main .ad_wrap .swiper.adSwiper .btn_counter .prev_btn {}
+#wrap main .ad_wrap .swiper.adSwiper .btn_counter .prev_btn img {}
+#wrap main .ad_wrap .swiper.adSwiper .btn_counter .current_pg {
+    font-weight:600;
+    font-size:1.125rem;
 }
-#wrap header nav .gnb > li {
+#wrap main .ad_wrap .swiper.adSwiper .btn_counter .divider {}
+#wrap main .ad_wrap .swiper.adSwiper .btn_counter .total-pg {
+    font-weight:300;
+    font-size:1.125rem;
+}
+#wrap main .ad_wrap .swiper.adSwiper .btn_counter .next_btn {}
+#wrap main .ad_wrap .swiper.adSwiper .btn_counter .next_btn img {}
+/* 2.비전배너 */
+main .vision_wrap {
+    background:url(../images/bnr001.jpg);
+    height:315px;
+    position:relative;
+    text-align:center;
+    border-bottom:1px solid #DEDEDE;
+}
+main .vision_wrap .vision_txt {
+    position:absolute;
+    top:128.5px;
+    right:285px;
+}
+main .vision_wrap .vision_txt h2 {
+    font-size:1.375rem;
+    font-weight:500;
+    margin-bottom:21px;
+}
+main .vision_wrap .vision_txt p {
+    font-size:0.813rem;
+    font-weight:300;
+    margin-bottom:27px;
+    line-height:1.7;
     
 }
-#wrap header nav .gnb > li > a {}
-#wrap header nav .gnb > li .lnb_bg {
+main .vision_wrap .vision_txt span {
+    font-family:'Oooh Baby',serif;
+    letter-spacing:-0.2;
+    font-size:0.938rem;
+    color:#9A9A9A;
 }
-#wrap header nav .gnb > li .lnb_depth {/* 임시값... */
-    position: absolute;
-    top:100%;
-    left:0;
-    width:200px;
-    background: #fff;
-    border:1px solid #eee;
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
-    display:none;
-    z-index:100;
-}
-#wrap header nav .gnb > li .lnb_depth li {}
-#wrap header nav .gnb > li .lnb_depth li > a {}
-#wrap header .right_menu {}
-#wrap header .right_menu li {}
-#wrap header .right_menu li a {}
-#wrap header .right_menu li a img {}
-/* main부터 선택자 이어적으면 됨~~! */
+/* 3.best */
+main .best_wrap {}
+main .best_wrap .best_header {}
+main .best_wrap .best_header h2 {}
+main .best_wrap .best_header a {}
+main .best_wrap .best_header a span {}
+main .best_wrap .best_header a span img {}
+main .best_wrap .best_list {}
+main .best_wrap .best_list .best_card {}
+main .best_wrap .best_list .best_card a {}
+main .best_wrap .best_list .best_card a .best_img_wrap {}
+main .best_wrap .best_list .best_card a .best_img_wrap img {}
+main .best_wrap .best_list .best_card a .best_img_wrap .best_icon {}
+main .best_wrap .best_list .best_card a .best_img_wrap .best_icon a {}
+main .best_wrap .best_list .best_card a .best_img_wrap .best_icon a img {}
+main .best_wrap .best_list .best_card a .best_txt {}
+main .best_wrap .best_list .best_card a .best_txt .product_name {}
+main .best_wrap .best_list .best_card a .best_txt .product_price {}
+main .best_wrap .best_list .best_card a .best_txt .product_price .discount {}
+main .best_wrap .best_list .best_card a .best_txt .product_price .price {}

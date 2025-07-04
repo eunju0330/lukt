@@ -6,7 +6,8 @@
     <meta name="keywords" content="룩트, lukt, 룩트요거트, 요거트">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>룩트 요거트</title>
-    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
+    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link href="./styles/reset.css" rel="stylesheet">
     <link href="./styles/common.css" rel="stylesheet">
@@ -24,7 +25,7 @@
             <!-- s:메뉴 -->
             <nav>
                 <ul class="gnb">
-                    <li><a href="#">요거트&쇼핑</a>
+                    <li><a href="#" class="yogurt_on">요거트&쇼핑</a>
                     <!-- s:요거트&쇼핑 서브메뉴 위치 -->
                         <div class="lnb_bg">
                             <ul class="lnb_depth">
@@ -96,19 +97,34 @@
                             <div class="swiper-slide slide1">
                                 <div class="ad_txt">
                                     <div class="ad_line"></div>
-                                    <h2>버터에 풍미를 더하다</h2>
-                                    <p>감칠맛 가득! 다시마 버터부터<br>고소한 시나몬피칸 버터까지</p>
+                                    <div class="txt_area">
+                                        <h2>버터에 풍미를 더하다</h2>
+                                        <p>감칠맛 가득! 다시마 버터부터<br>고소한 시나몬피칸 버터까지</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide2"><!-- 슬라이드2번째 -->
+                                <div class="ad_txt">
+                                    <div class="ad_line"></div>
+                                    <div class="txt_area">
+                                        <h2>버터에 풍미를 더하다</h2>
+                                        <p>감칠맛 가득! 다시마 버터부터<br>고소한 시나몬피칸 버터까지</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <!-- 왼, 오 버튼 -->
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
+                        <div class="btn_counter">
+                            <a class="prev_btn"><img src="./images/prev001.png" alt=""></a>
+                            <span class="current_pg">01</span>
+                            <span class="divider">|</span>
+                            <span class="total-pg">03</span>
+                            <a class="next_btn"><img src="./images/next001.png" alt=""></a>
+                        </div>
                     </div>
             </section>
             <!-- 2.비전배너 -->
             <section class="vision_wrap">
-                <img src="./images/yogurt.png" alt="">
                 <div class="vision_txt">
                     <h2>룩트의 비전은 건강한 미식경험입니다.</h2>
                     <p>먹는 것이 매순간 행복한 경험이 되는 제품을 만듭니다.<br>모든 사람이 쉽고 간편하게 건강한 미식을 경험하게 해드리겠습니다.</p>
@@ -287,7 +303,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
             </section>
             <!-- 8. 레시피 배너 -->
             <section class="recipe_wrap">

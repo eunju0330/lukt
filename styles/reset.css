@@ -6,7 +6,7 @@ form,fieldset,legend,input,button,select,option,textarea,
 em,strong,sub,sup,br,span,del,s,q,mark,code,img,a,
 table,thead,tbody,tfoot,tr,td,th {
     margin:0; padding:0; box-sizing:border-box; /* 가로크기에 padding값을 더하는게 기본값이면 이걸 설정함으로써 여백을 따로 잡아줌 */
-    line-height:1; letter-spacing:-0.02em; word-spacing:0; /* 대부분 자간 설정을 -2로 해놨기에 0에서 -0.02em으로 변경 */
+    line-height:1; letter-spacing:0em; word-spacing:0; /* 대부분 자간 설정을 -2로 해놨기에 0에서 -0.02em으로 변경 */
     font-size:1em; font-weight:400; font-style:normal;
     color:#000;
     font-family:'pretendard',sans-serif;
