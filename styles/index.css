@@ -21,7 +21,7 @@ html,body {}
     background:pink;
     display:flex;
     flex-flow:row nowrap;
-    gap:50px; 
+    gap:50px;
 }
 #wrap header nav .gnb > li {
     
