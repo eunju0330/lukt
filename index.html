@@ -7,12 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>룩트 요거트</title>
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link href="./styles/reset.css" rel="stylesheet">
+    <link href="./styles/common.css" rel="stylesheet">
     <link href="./styles/index.css" rel="stylesheet">
 </head>
 <body>
     <!-- 룩트 메인페이지 시작 영역 -->
     <div id="wrap">
+        <!-- header -->
         <header>
             <!-- 로고 -->
             <h1>
@@ -82,6 +85,7 @@
                 <li><a href="#"><img src="./images/header003.png" alt="내 정보 보기"></a></li>
             </ul>
         </header>
+        <!-- main -->
         <main>
             <!-- 1.광고배너 -->
             <section class="ad_wrap">
@@ -94,15 +98,12 @@
                                     <div class="ad_line"></div>
                                     <h2>버터에 풍미를 더하다</h2>
                                     <p>감칠맛 가득! 다시마 버터부터<br>고소한 시나몬피칸 버터까지</p>
-                                    <!-- 왼, 오 버튼 -->
-                                    <div class="ad_btn">
-                                    <button type="button" class="ad_prev"><img src="./images/prev001.png" alt="이전 광고 보기"></button>
-                                    <span class="page_num">01 / 08</span>
-                                    <button type="button" class="ad_next"><img src="./images/next001.png" alt="다음 광고 보기"></button>
-                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- 왼, 오 버튼 -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
             </section>
             <!-- 2.비전배너 -->
@@ -111,7 +112,7 @@
                 <div class="vision_txt">
                     <h2>룩트의 비전은 건강한 미식경험입니다.</h2>
                     <p>먹는 것이 매순간 행복한 경험이 되는 제품을 만듭니다.<br>모든 사람이 쉽고 간편하게 건강한 미식을 경험하게 해드리겠습니다.</p>
-                    <span>Every Meal  Could Be a Heakthy Gourmet Experience</span>
+                    <span>Every Meal  Could Be a Healthy Gourmet Experience</span>
                 </div>
             </section>
             <!-- 3.best -->
@@ -121,74 +122,82 @@
                     <a href="#"><span>더보기</span><img src="./images/next002.png" alt=""></a>
                 </div>
                 <ul class="best_list">
-                    <li class="product_card">
+                    <li class="best_card">
                         <a href="#">
-                            <div class="product_img_wrap">
-                                <img src="./images/best001.jpg" alt="룩트 단백질쉐이크 파우치 45g 3개 한정 상품">
+                            <div class="best_img_wrap">
+                                <img src="./images/best001.jpg" alt="단백질쉐이크 파우치 3세트">
                                 <div class="best_icon">
                                     <img src="./images/best_icon001.png" alt="찜하기">
                                     <img src="./images/best_icon002.png" alt="장바구니담기">
                                 </div>
                             </div>
-                            <p class="product_name">룩트 단백질쉐이크 파우치 45g x 3개 (한정)</p>
-                            <p class="product_price">
-                                <span class="discount">23%</span>
-                                <span class="price">26,900원</span>
-                            </p>
-                        </a>
-                    </li>
-                    <li class="product_card">
-                        <a href="#">
-                            <div class="product_img_wrap">
-                                <img src="./images/best002.jpg" alt="룩트 단백질쉐이크 파우치 45g 3개 한정 상품">
-                                <div class="best_icon">
-                                    <img src="./images/best_icon001.png" alt="찜하기">
-                                    <img src="./images/best_icon002.png" alt="장바구니담기">
-                                </div>
-                            </div>
-                            <p class="product_name">룩트 단백질쉐이크 파우치 45g x 3개 (한정)</p>
-                            <p class="product_price">
-                                <span class="discount">23%</span>
-                                <span class="price">26,900원</span>
-                            </p>
-                        </a>
-                    </li>
-                    <li class="product_card">
-                        <a href="#">
-                            <div class="product_img_wrap">
-                                <img src="./images/best003.jpg" alt="룩트 단백질쉐이크 파우치 45g 3개 한정 상품">
-                                <div class="best_icon">
-                                    <img src="./images/best_icon001.png" alt="찜하기">
-                                    <img src="./images/best_icon002.png" alt="장바구니담기">
-                                </div>
-                            </div>
-                            <div class="product_name">룩트 단백질쉐이크 파우치 45g x 3개 (한정)</div>
-                            <div class="product_price">
-                                <span class="discount">23%</span>
-                                <span class="price">26,900원</span>
+                            <div class="best_txt">
+                                <p class="product_name">룩트 단백질쉐이크 파우치 45g x 3개 (한정)</p>
+                                <p class="product_price">
+                                    <span class="discount">23%</span>
+                                    <strong class="price">26,900원</strong>
+                                </p>
                             </div>
                         </a>
                     </li>
-                    <li class="product_card">
+                    <li class="best_card">
                         <a href="#">
-                            <div class="product_img_wrap">
-                                <img src="./images/best004.jpg" alt="룩트 단백질쉐이크 파우치 45g 3개 한정 상품">
+                            <div class="best_img_wrap">
+                                <img src="./images/best002.jpg" alt="단백질쉐이크 파우치 3세트">
                                 <div class="best_icon">
                                     <img src="./images/best_icon001.png" alt="찜하기">
                                     <img src="./images/best_icon002.png" alt="장바구니담기">
                                 </div>
                             </div>
-                            <p class="product_name">룩트 단백질쉐이크 파우치 45g x 3개 (한정)</p>
-                            <p class="product_price">
-                                <span class="discount">23%</span>
-                                <span class="price">26,900원</span>
-                            </p>
+                            <div class="best_txt">
+                                <p class="product_name">룩트 단백질쉐이크 파우치 45g x 3개 (한정)</p>
+                                <p class="product_price">
+                                    <span class="discount">23%</span>
+                                    <strong class="price">26,900원</strong>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="best_card">
+                        <a href="#">
+                            <div class="best_img_wrap">
+                                <img src="./images/best003.jpg" alt="단백질쉐이크 파우치 3세트">
+                                <div class="best_icon">
+                                    <img src="./images/best_icon001.png" alt="찜하기">
+                                    <img src="./images/best_icon002.png" alt="장바구니담기">
+                                </div>
+                            </div>
+                            <div class="best_txt">
+                                <p class="product_name">룩트 단백질쉐이크 파우치 45g x 3개 (한정)</p>
+                                <p class="product_price">
+                                    <span class="discount">23%</span>
+                                    <strong class="price">26,900원</strong>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="best_card">
+                        <a href="#">
+                            <div class="best_img_wrap">
+                                <img src="./images/best004.jpg" alt="단백질쉐이크 파우치 3세트">
+                                <div class="best_icon">
+                                    <img src="./images/best_icon001.png" alt="찜하기">
+                                    <img src="./images/best_icon002.png" alt="장바구니담기">
+                                </div>
+                            </div>
+                            <div class="best_txt">
+                                <p class="product_name">룩트 단백질쉐이크 파우치 45g x 3개 (한정)</p>
+                                <p class="product_price">
+                                    <span class="discount">23%</span>
+                                    <strong class="price">26,900원</strong>
+                                </p>
+                            </div>
                         </a>
                     </li>
                 </ul>
             </section>
             <!-- 4.신제품광고배너 -->
-            <section class="newbnr">
+            <section class="newbnr_wrap">
                 <a href="#">
                     <div class="newbnr_txt">
                         <h2>단백질쉐이크</h2>
@@ -199,46 +208,228 @@
                 </a>
             </section>
             <!-- 5.sale -->
-            <div class="sale_wrap">
-                <div class="sale_left">
-                    <h2>SALE</h2>
-                    <div class="sale_select">
-                        <a href="#">요거트&토핑</a>
-                        <a href="#" class="on">단백질쉐이크</a>
-                        <a href="#">버터</a>
+            <section class="sale_warp">
+                    <div class="sale_left">
+                        <h2>SALE</h2>
+                        <div class="sale_select">
+                            <a href="#">요거트&토핑</a>
+                            <a href="#" class="on">단백질쉐이크</a>
+                            <a href="#">버터</a>
+                        </div>
                     </div>
-                </div>
-            </div>
+                    <ul class="sale_list">
+                        <li class="sale_card">
+                        <a href="#">
+                            <div class="sale_img_wrap">
+                                <img src="./images/sale001.jpg" alt="단백질쉐이크 파우치 3세트">
+                                <div class="sale_icon">
+                                    <img src="./images/best_icon001.png" alt="찜하기"> <!-- 찜하기, 장바구니담기 아이콘 이름 변경하기 -->
+                                    <img src="./images/best_icon002.png" alt="장바구니담기">
+                                </div>
+                            </div>
+                            <div class="sale_txt">
+                                <p class="product_name">룩트 단백질쉐이크 파우치 45g x 3개 (한정)</p>
+                                <p class="product_price">
+                                    <span class="discount">23%</span>
+                                    <strong class="price">26,900원</strong>
+                                </p>
+                            </div>
+                        </a>
+                        </li>
+                    </ul>
+            </section>
             <!-- 6-1. 선물 배너 -->
             <section class="gift_wrap">
-                <a href="#" class="gift_bnr">
+                <a href="#">
                     <img src="./images/bnr003.jpg" alt="선물세트">
-                    <div class="promo_txt">
+                    <div class="gift_txt">
                         <h2>소중한 순간을 위한 완벽한 선물</h2>
                         <p>건강한 재료, 정직한 제조, 그리고 깊은 맛. 룩트 선물세트는 당신의 진심을 조용히, 그러나 분명하게 전합니다.</p>
                         <div class="more_btn">
-                            <img src="./images/next002.png" alt="선물세트 자세히 보기">
+                            <img src="./images/next002.png" alt="">
                         </div>
                     </div>
                 </a>
             </section>
             <!-- 6-2. 정기배송 배너 -->
             <section class="delivery_wrap">
-                <a href="#" class="delivery_bnr">
+                <a href="#">
                     <img src="./images/bnr004.jpg" alt="정기배송">
-                    <div class="promo_txt">
+                    <div class="delivery_txt">
                         <h2>필요할 때 딱! 자동으로 찾아가는 정기배송</h2>
                         <p>원하는 주기, 원하는 제품으로 내 삶에 꼭 맞춘 요거트 루틴을 시작하세요.</p>
                         <div class="more_btn">
-                            <img src="./images/next002.png" alt="선물세트 보기">
+                            <img src="./images/next002.png" alt="">
                         </div>
                     </div>
                 </a>
             </section>
             <!-- 7.비디오 카테고리 -->
-            <section class="video_wrap">
+            <section class="tab_wrap">
+                <div class="tab_layout">
+                    <div class="tab_video">
+                        <video src="./video/kids.mp4" autoplay muted loop playsinline></video>
+                    </div>
+                        <div class="tab_area">
+                            <ul class="tab_menu">
+                                <li class="tab">요거트&쇼핑</li>
+                                <li class="tab">단백질쉐이크</li>
+                                <li class="tab">버터</li>
+                                <li class="tab kids_tab">Kids</li>
+                            </ul>
+                            <div class="swiper tabSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">요거트 내용</div>
+                                    <div class="swiper-slide">단백질쉐이크 내용</div>
+                                    <div class="swiper-slide">버터 내용</div>
+                                    <div class="swiper-slide">Kids 내용</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 8. 레시피 배너 -->
+            <section class="recipe_wrap">
+                <a href="#">
+                    <div class="recipe_txt">
+                        <h2>룩트의 추천 레시피</h2>
+                        <h3>룩트와 함께 건강하고 맛있게 먹는 비법</h3>
+                        <p>레시피 확인하기</p>
+                    </div>
+                </a>
+            </section>
+            <!-- 9. 리뷰 -->
+            <section class="review_wrap">
+                <h2>REVIEW</h2>
+                <div class="swiper reviewSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide1">
+                            <div class="review_card">
+                                <img src="./images/rv001.jpg" alt="단백질쉐이크 파우치 3세트">
+                                <div class="review_txt">
+                                    <h3>룩트 단백질쉐이크 파우치 45g x 3개 (한정)</h3>
+                                    <strong class="price">26,900원</strong>
+                                </div>
+                                <div class="review_box">
+                                    <p>
+                                        <span class="star">★★★★★</span>
+                                        건강한 재료에 맛까지 좋아서 자꾸 손이 가요. 부모님께 건강 간식으로도 보내드렸어요. 강력 추천합니다!
+                                    </p>
+                                </div>
+                                <div class="review_box">
+                                    <p>
+                                        <span class="star">★★★★★</span>
+                                        건강한 재료에 맛까지 좋아서 자꾸 손이 가요. 부모님께 건강 간식으로도 보내드렸어요. 강력 추천합니다!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="review_card">
+                                <img src="./images/rv002.jpg" alt="단백질쉐이크 파우치 3세트">
+                                <div class="review_txt">
+                                    <h3>룩트 단백질쉐이크 파우치 45g x 3개 (한정)</h3>
+                                    <strong class="price">26,900원</strong>
+                                </div>
+                                <div class="review_box">
+                                    <p>
+                                        <span class="star">★★★★★</span>
+                                        건강한 재료에 맛까지 좋아서 자꾸 손이 가요. 부모님께 건강 간식으로도 보내드렸어요. 강력 추천합니다!
+                                    </p>
+                                </div>
+                                <div class="review_box">
+                                    <p>
+                                        <span class="star">★★★★★</span>
+                                        건강한 재료에 맛까지 좋아서 자꾸 손이 가요. 부모님께 건강 간식으로도 보내드렸어요. 강력 추천합니다!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="review_card">
+                                <img src="./images/rv003.jpg" alt="단백질쉐이크 파우치 3세트">
+                                <div class="review_txt">
+                                    <h3>룩트 단백질쉐이크 파우치 45g x 3개 (한정)</h3>
+                                    <strong class="price">26,900원</strong>
+                                </div>
+                                <div class="review_box">
+                                    <p>
+                                        <span class="star">★★★★★</span>
+                                        건강한 재료에 맛까지 좋아서 자꾸 손이 가요. 부모님께 건강 간식으로도 보내드렸어요. 강력 추천합니다!
+                                    </p>
+                                </div>
+                                <div class="review_box">
+                                    <p>
+                                        <span class="star">★★★★★</span>
+                                        건강한 재료에 맛까지 좋아서 자꾸 손이 가요. 부모님께 건강 간식으로도 보내드렸어요. 강력 추천합니다!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="review_card">
+                                <img src="./images/rv004.jpg" alt="단백질쉐이크 파우치 3세트">
+                                <div class="review_txt">
+                                    <h3>룩트 단백질쉐이크 파우치 45g x 3개 (한정)</h3>
+                                    <strong class="price">26,900원</strong>
+                                </div>
+                                <div class="review_box">
+                                    <p>
+                                        <span class="star">★★★★★</span>
+                                        건강한 재료에 맛까지 좋아서 자꾸 손이 가요. 부모님께 건강 간식으로도 보내드렸어요. 강력 추천합니다!
+                                    </p>
+                                </div>
+                                <div class="review_box">
+                                    <p>
+                                        <span class="star">★★★★★</span>
+                                        건강한 재료에 맛까지 좋아서 자꾸 손이 가요. 부모님께 건강 간식으로도 보내드렸어요. 강력 추천합니다!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide2">slide2</div>
+                        <div class="swiper-slide slide3">slide3</div>
+                        <div class="swiper-slide slide4">slide4</div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+            <!-- 카페 홍보 배너 -->
+            <section class="cafe_wrap">
+                <div class="cafe_bnr">
+                    <div class="cafe_logo"><img src="./images/logo002.png" alt="카페 룩트"></div>
+                    <div class="cafe_txt">
+                        <p class="address">주소 : 서울시 마포구 독막로 70, 1층 루크 서울</p>
+                        <p class="content">카페 룩트는 룩트가 꿈꾸는 ‘카페’의 의미를 실현한 공간입니다.<br>좋은 품질의 커피와 디저트 뿐 아니라 매일 멋진 식사를 할 수 있는 ‘Eatery’로서의 카페를 지향합니다.<br>캐주얼한 미식의 행복을 느껴보세요.</p>
+                    </div>
+                </div>
             </section>
         </main>
+        <!-- footer -->
+        <footer>
+            <div class="footer_inner">
+                <div class="footer_logo"><img src="./images/logo003.png" alt="주식회사 아티튜드"></div>
+                <ul class="footer_info">
+                    <li>상호명 : 주식회사 아티튜드 | 대표이사 : 류주현</li>
+                    <li>주소 : 서울특별시 강남구 테헤란로7길 22, 2층 920호(역삼동, 한국과학기술회관)</li>
+                    <li>사업자등록번호 : 387-88-01923 | <a href="#">사업자정보확인</a></li>
+                    <li>통신판매업신고 : 제2020-서울강남-00906호</li>
+                    <li>고객센터 02-6207-2083 및 우측하단 채팅상담</li>
+                    <li>입금계좌 : 신한은행 140-013-704672 (주)아티튜드</li>
+                    <li>제휴제안 hi@artitude.co.kr</li>
+                </ul>
+                <div class="footer_link">
+                    <a href="#">이용약관</a>
+                    <a href="#">개인정보처리방침</a>
+                </div>
+                <p>Copyright ⓒ 2025 룩트 오가트 All rights reserved.</p>
+                <div class="footer_sns">
+                        <a href="#"><img src="./images/sns001.png" alt="인스타그램"></a>
+                        <a href="#"><img src="./images/sns002.png" alt="유튜브"></a>
+                        <a href="#"><img src="./images/sns003.png" alt="블로그"></a>
+                </div>
+                <div class="kcp_mark">
+                    <img src="./images/kcp.png" alt="KCP 에스크로 마크">
+                </div>
+            </div>
+        </footer>
     </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./script/main.js"></script>
 </body>
 </html>
