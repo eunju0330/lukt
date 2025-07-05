@@ -1,53 +1,71 @@
 /* main, footer */
 #wrap header {
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    background:aqua;
-    height:75px;
-    padding:15px 90px 0;
+    position:absolute;
+    top:0; left:0;
+    width:100%; z-index:20;
+    background:transparent;
+    padding-top:15.5px;
 }
-#wrap header h1 {}
-#wrap header h1 a {}
-#wrap header h1 a img {}
-#wrap header nav {}
-#wrap header nav .gnb {
+#wrap header .header_inner {
+    position:relative;
+    display:flex; align-items:center; justify-content:space-between;
+    height:60px;
+    width:100%;
+    padding:0 105.5px;
+}
+#wrap header .header_inner h1 {}
+#wrap header .header_inner h1 a {}
+#wrap header .header_inner h1 a img {
+    width:170px;
+    height:auto;
+}
+#wrap header .header_inner nav {
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+}
+#wrap header .header_inner nav .gnb {
     display:flex;
     flex-flow:row nowrap;
     gap:50px; 
 }
-#wrap header nav .gnb > li {
+#wrap header .header_inner nav .gnb > li {
     
 }
-#wrap header nav .gnb > li .yogurt_on {color:#888;}
-#wrap header nav .gnb > li > a {
+#wrap header .header_inner nav .gnb > li:hover .lnb_depth {
+    display:block;
+}
+#wrap header .header_inner nav .gnb > li .yogurt_on {color:#888;}
+#wrap header .header_inner nav .gnb > li > a {
     font-size:1.125rem;
 }
-#wrap header nav .gnb > li .lnb_bg {
+#wrap header .header_inner nav .gnb > li .lnb_bg {
     position:relative;
 }
-#wrap header nav .gnb > li .lnb_depth {/* 임시값... */
+#wrap header .header_inner nav .gnb > li .lnb_depth {
     position: absolute;
     top:22px;
-    left:0;
-    width:125px;
+    left:-15px;
     background: #fff;
     z-index:100;
     width:125px;
-    padding:14px 18px;
+    padding:14px 14px 18px;
     display:none;
 }
-#wrap header nav .gnb > li .lnb_depth li {
+#wrap header .header_inner nav .gnb > li .lnb_depth li {
     margin-bottom:15px;
 }
-#wrap header nav .gnb > li .lnb_depth li > a {
+#wrap header .header_inner nav .gnb > li .lnb_depth li:last-child {
+    margin-bottom:0;
+}
+#wrap header .header_inner nav .gnb > li .lnb_depth li > a {
     font-size: 0.9375rem;
     letter-spacing:-0.02rem;
 }
-#wrap header .right_menu {
+#wrap header .header_inner .right_menu {
     display:flex; 
     gap:22px;
 }
-#wrap header .right_menu li {}
-#wrap header .right_menu li a {}
-#wrap header .right_menu li a img {}
+#wrap header .header_inner .right_menu li {}
+#wrap header .header_inner .right_menu li a {}
+#wrap header .header_inner .right_menu li a img {width:22px;}

@@ -6,7 +6,9 @@
     <meta name="keywords" content="룩트, lukt, 룩트요거트, 요거트">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>룩트 요거트</title>
-    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap" rel="stylesheet">
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/maru-buri.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link href="./styles/reset.css" rel="stylesheet">
@@ -18,73 +20,75 @@
     <div id="wrap">
         <!-- header -->
         <header>
-            <!-- 로고 -->
-            <h1>
-                <a href="./index.html"><img src="./images/logo.png" alt="룩트 요거트"></a>
-            </h1>
-            <!-- s:메뉴 -->
-            <nav>
-                <ul class="gnb">
-                    <li><a href="#" class="yogurt_on">요거트&쇼핑</a>
-                    <!-- s:요거트&쇼핑 서브메뉴 위치 -->
-                        <div class="lnb_bg">
-                            <ul class="lnb_depth">
-                                <li><a href="#">sale</a></li>
-                                <li><a href="#">요거트</a></li>
-                                <li><a href="#">요거트볼</a></li>
-                                <li><a href="#">그래놀라</a></li>
-                                <li><a href="#">크래커</a></li>
-                                <li><a href="#">과일&꿀</a></li>
-                                <li><a href="#">정기배송</a></li>
-                                <li><a href="#">굿즈</a></li>
-                            </ul>
-                        </div>
-                    <!-- e:요거트&쇼핑 서브메뉴 위치 -->
-                    </li>
-                    <li><a href="#">단백질쉐이크</a></li>
-                    <!-- 단백질쉐이크 위치 -->
-                    <li><a href="#">버터</a>
-                    <!-- s:버터 서브메뉴 위치 -->
-                        <div class="lnb_bg">
-                            <ul class="lnb_depth">
-                                <li><a href="#">세트</a></li>
-                                <li><a href="#">단품</a></li>
-                            </ul>
-                        </div>
-                    <!-- e:버터 서브메뉴 위치 -->
-                    </li>
-                    <li><a href="#">키즈</a>
-                    <!-- s:키즈 서브메뉴 위치 -->
-                        <div class="lnb_bg">
-                            <ul class="lnb_depth">
-                                <li><a href="#">유산균 음료</a></li>
-                                <li><a href="#">자일리톨 캔디</a></li>
-                                <li><a href="#">자일리톨 젤리</a></li>
-                                <li><a href="#">짜먹는 요거트</a></li>
-                                <li><a href="#">정기배송</a></li>
-                            </ul>
-                        </div>
-                    <!-- e:버터 서브메뉴 위치 -->
-                    </li>
-                    <li><a href="#">브랜드</a>
-                    <!-- s:브랜드 서브메뉴 위치 -->
-                        <div class="lnb_bg">
-                            <ul class="lnb_depth">
-                                <li><a href="#">룩트</a></li>
-                                <li><a href="#">킨디</a></li>
-                                <li><a href="#">사업자전용몰</a></li>
-                            </ul>
-                        </div>
-                    <!-- e:브랜드 서브메뉴 위치 -->
-                    </li>
+            <div class="header_inner">
+                <!-- 로고 -->
+                <h1>
+                    <a href="./index.html"><img src="./images/logo.png" alt="룩트 요거트"></a>
+                </h1>
+                <!-- s:메뉴 -->
+                <nav>
+                    <ul class="gnb">
+                        <li><a href="#" class="yogurt_on">요거트&쇼핑</a>
+                        <!-- s:요거트&쇼핑 서브메뉴 위치 -->
+                            <div class="lnb_bg">
+                                <ul class="lnb_depth">
+                                    <li><a href="#">sale</a></li>
+                                    <li><a href="#">요거트</a></li>
+                                    <li><a href="#">요거트볼</a></li>
+                                    <li><a href="#">그래놀라</a></li>
+                                    <li><a href="#">크래커</a></li>
+                                    <li><a href="#">과일&꿀</a></li>
+                                    <li><a href="#">정기배송</a></li>
+                                    <li><a href="#">굿즈</a></li>
+                                </ul>
+                            </div>
+                        <!-- e:요거트&쇼핑 서브메뉴 위치 -->
+                        </li>
+                        <li><a href="#">단백질쉐이크</a></li>
+                        <!-- 단백질쉐이크 위치 -->
+                        <li><a href="#">버터</a>
+                        <!-- s:버터 서브메뉴 위치 -->
+                            <div class="lnb_bg">
+                                <ul class="lnb_depth">
+                                    <li><a href="#">세트</a></li>
+                                    <li><a href="#">단품</a></li>
+                                </ul>
+                            </div>
+                        <!-- e:버터 서브메뉴 위치 -->
+                        </li>
+                        <li><a href="#">키즈</a>
+                        <!-- s:키즈 서브메뉴 위치 -->
+                            <div class="lnb_bg">
+                                <ul class="lnb_depth">
+                                    <li><a href="#">유산균 음료</a></li>
+                                    <li><a href="#">자일리톨 캔디</a></li>
+                                    <li><a href="#">자일리톨 젤리</a></li>
+                                    <li><a href="#">짜먹는 요거트</a></li>
+                                    <li><a href="#">정기배송</a></li>
+                                </ul>
+                            </div>
+                        <!-- e:버터 서브메뉴 위치 -->
+                        </li>
+                        <li><a href="#">브랜드</a>
+                        <!-- s:브랜드 서브메뉴 위치 -->
+                            <div class="lnb_bg">
+                                <ul class="lnb_depth">
+                                    <li><a href="#">룩트</a></li>
+                                    <li><a href="#">킨디</a></li>
+                                    <li><a href="#">사업자전용몰</a></li>
+                                </ul>
+                            </div>
+                        <!-- e:브랜드 서브메뉴 위치 -->
+                        </li>
+                    </ul>
+                </nav>
+                <!-- e:메뉴 -->
+                <ul class="right_menu">
+                    <li><a href="#"><img src="./images/header001.png" alt="장바구니"></a></li>
+                    <li><a href="#"><img src="./images/header002.png" alt="찜 상품 보기"></a></li>
+                    <li><a href="#"><img src="./images/header003.png" alt="내 정보 보기"></a></li>
                 </ul>
-            </nav>
-            <!-- e:메뉴 -->
-            <ul class="right_menu">
-                <li><a href="#"><img src="./images/header001.png" alt="장바구니"></a></li>
-                <li><a href="#"><img src="./images/header002.png" alt="찜 상품 보기"></a></li>
-                <li><a href="#"><img src="./images/header003.png" alt="내 정보 보기"></a></li>
-            </ul>
+            </div>
         </header>
         <!-- main -->
         <main>
@@ -117,7 +121,7 @@
                         <div class="btn_counter">
                             <a class="prev_btn"><img src="./images/prev001.png" alt=""></a>
                             <span class="current_pg">01</span>
-                            <span class="divider">|</span>
+                            <span class="divider"></span>
                             <span class="total-pg">03</span>
                             <a class="next_btn"><img src="./images/next001.png" alt=""></a>
                         </div>
@@ -135,13 +139,31 @@
             <section class="best_wrap">
                 <div class="best_header">
                     <h2>BEST</h2>
-                    <a href="#"><span>더보기</span><img src="./images/next002.png" alt=""></a>
+                    <a href="#" class="more_btn"><span>더보기</span><img src="./images/more.png" alt=""></a>
                 </div>
                 <ul class="best_list">
                     <li class="best_card">
                         <a href="#">
                             <div class="best_img_wrap">
-                                <img src="./images/best001.jpg" alt="단백질쉐이크 파우치 3세트">
+                                <img src="./images/best001.jpg" alt="단백질쉐이크 파우치 3개">
+                                <div class="best_icon">
+                                    <img src="./images/best_icon001.png" alt="찜하기">
+                                    <img src="./images/best_icon002.png" alt="장바구니담기"> 
+                                </div>
+                            </div>
+                            <div class="best_txt">
+                                <p class="product_name">룩트 단백질쉐이크 파우치 45g x 3개 (한정)</p>
+                                <p class="product_price">
+                                    <span class="discount">23%</span>
+                                    <strong class="price">26,900원</strong>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="best_card">
+                        <a href="#">
+                            <div class="best_img_wrap">
+                                <img src="./images/best002.jpg" alt="단백질쉐이크 파우치 3개">
                                 <div class="best_icon">
                                     <img src="./images/best_icon001.png" alt="찜하기">
                                     <img src="./images/best_icon002.png" alt="장바구니담기">
@@ -159,7 +181,7 @@
                     <li class="best_card">
                         <a href="#">
                             <div class="best_img_wrap">
-                                <img src="./images/best002.jpg" alt="단백질쉐이크 파우치 3세트">
+                                <img src="./images/best003.jpg" alt="단백질쉐이크 파우치 3개">
                                 <div class="best_icon">
                                     <img src="./images/best_icon001.png" alt="찜하기">
                                     <img src="./images/best_icon002.png" alt="장바구니담기">
@@ -177,25 +199,7 @@
                     <li class="best_card">
                         <a href="#">
                             <div class="best_img_wrap">
-                                <img src="./images/best003.jpg" alt="단백질쉐이크 파우치 3세트">
-                                <div class="best_icon">
-                                    <img src="./images/best_icon001.png" alt="찜하기">
-                                    <img src="./images/best_icon002.png" alt="장바구니담기">
-                                </div>
-                            </div>
-                            <div class="best_txt">
-                                <p class="product_name">룩트 단백질쉐이크 파우치 45g x 3개 (한정)</p>
-                                <p class="product_price">
-                                    <span class="discount">23%</span>
-                                    <strong class="price">26,900원</strong>
-                                </p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="best_card">
-                        <a href="#">
-                            <div class="best_img_wrap">
-                                <img src="./images/best004.jpg" alt="단백질쉐이크 파우치 3세트">
+                                <img src="./images/best004.jpg" alt="단백질쉐이크 파우치 3개">
                                 <div class="best_icon">
                                     <img src="./images/best_icon001.png" alt="찜하기">
                                     <img src="./images/best_icon002.png" alt="장바구니담기">
@@ -216,7 +220,7 @@
             <section class="newbnr_wrap">
                 <a href="#">
                     <div class="newbnr_txt">
-                        <h2>단백질쉐이크</h2>
+                        <h2>단백질 쉐이크 3종</h2>
                         <h3>출시기념 SALE ~28%</h3>
                         <p>06/09 (월) - 06/18 (수)</p>
                         <span>지금 클릭하면 무료배송까지!</span>
@@ -224,61 +228,111 @@
                 </a>
             </section>
             <!-- 5.sale -->
-            <section class="sale_warp">
-                    <div class="sale_left">
-                        <h2>SALE</h2>
-                        <div class="sale_select">
-                            <a href="#">요거트&토핑</a>
-                            <a href="#" class="on">단백질쉐이크</a>
-                            <a href="#">버터</a>
-                        </div>
+            <section class="sale_wrap">
+                <div class="sale_left">
+                    <h2>SALE</h2>
+                    <div class="sale_select">
+                        <a href="#">요거트&토핑</a>
+                        <a href="#">단백질쉐이크</a>
+                        <a href="#">버터</a>
                     </div>
-                    <ul class="sale_list">
-                        <li class="sale_card">
-                        <a href="#">
-                            <div class="sale_img_wrap">
-                                <img src="./images/sale001.jpg" alt="단백질쉐이크 파우치 3세트">
-                                <div class="sale_icon">
-                                    <img src="./images/best_icon001.png" alt="찜하기"> <!-- 찜하기, 장바구니담기 아이콘 이름 변경하기 -->
-                                    <img src="./images/best_icon002.png" alt="장바구니담기">
-                                </div>
-                            </div>
-                            <div class="sale_txt">
-                                <p class="product_name">룩트 단백질쉐이크 파우치 45g x 3개 (한정)</p>
-                                <p class="product_price">
-                                    <span class="discount">23%</span>
-                                    <strong class="price">26,900원</strong>
-                                </p>
-                            </div>
-                        </a>
-                        </li>
-                    </ul>
+                </div>
+                <div class="swiper_wrap">
+                    <div class="sale_btn_wrap">
+                        <button class="sale_prev"><img src="./images/sale_prev_btn.png" alt="이전"></button>
+                        <button class="sale_next"><img src="./images/sale_next_btn.png" alt="다음"></button>
+                    </div>
+                    <div class="swiper saleSwiper">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide sale_card">
+                                <a href="#">
+                                        <div class="sale_img_wrap">
+                                            <img src="./images/sale001.jpg" alt="단백질쉐이크 파우치 3개">
+                                            <div class="sale_icon">
+                                                <img src="./images/best_icon001.png" alt="찜하기">
+                                                <img src="./images/best_icon002.png" alt="장바구니담기">
+                                            </div>
+                                        </div>
+                                        <div class="sale_txt">
+                                            <p class="product_name">룩트 단백질쉐이크 파우치<br>45g x 3개 (한정)</p>
+                                            <p class="product_price">
+                                                <span class="discount">23%</span>
+                                                <strong class="price">26,900원</strong>
+                                            </p>
+                                        </div>
+                                    </a>
+                            </li>
+                            <li class="swiper-slide sale_card">
+                                <a href="#">
+                                    <div class="sale_img_wrap">
+                                        <img src="./images/sale002.jpg" alt="단백질쉐이크 볶음콩소보로 7개입">
+                                        <div class="sale_icon">
+                                            <img src="./images/best_icon001.png" alt="찜하기">
+                                            <img src="./images/best_icon002.png" alt="장바구니담기">
+                                        </div>
+                                    </div>
+                                    <div class="sale_txt">
+                                        <p class="product_name">룩트 단백질쉐이크 볶음콩소보로 파우치<br>45g × 7개입 (1세트)</p>
+                                        <p class="product_price">
+                                            <span class="discount">23%</span>
+                                            <strong class="price">26,900원</strong>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide sale_card">
+                                <a href="#">
+                                    <div class="sale_img_wrap">
+                                        <img src="./images/sale003.jpg" alt="단백질쉐이크 초코헤이즐넛 7개입">
+                                        <div class="sale_icon">
+                                            <img src="./images/best_icon001.png" alt="찜하기">
+                                            <img src="./images/best_icon002.png" alt="장바구니담기">
+                                        </div>
+                                    </div>
+                                    <div class="sale_txt">
+                                        <p class="product_name">룩트 단백질쉐이크 초코헤이즐넛 파우치<br>45g × 7개입 (1세트)</p>
+                                        <p class="product_price">
+                                            <span class="discount">23%</span>
+                                            <strong class="price">26,900원</strong>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </section>
             <!-- 6-1. 선물 배너 -->
-            <section class="gift_wrap">
-                <a href="#">
-                    <img src="./images/bnr003.jpg" alt="선물세트">
-                    <div class="gift_txt">
-                        <h2>소중한 순간을 위한 완벽한 선물</h2>
-                        <p>건강한 재료, 정직한 제조, 그리고 깊은 맛. 룩트 선물세트는 당신의 진심을 조용히, 그러나 분명하게 전합니다.</p>
-                        <div class="more_btn">
-                            <img src="./images/next002.png" alt="">
+            <section class="service_wrap">
+                <div class="offer_wrap">
+                    <a href="#">
+                        <img src="./images/bnr003.jpg" alt="선물세트">
+                        <div class="offer_txt">
+                            <div class="offer_left">
+                                <h2>소중한 순간을 위한 완벽한 선물</h2>
+                                <p>건강한 재료, 정직한 제조, 그리고 깊은 맛. 룩트 선물세트는 당신의 진심을 조용히,<br>그러나 분명하게 전합니다.</p>
+                            </div>
+                            <div class="more_btn">
+                                <img src="./images/service_btn.png" alt="">
+                            </div>
                         </div>
-                    </div>
-                </a>
-            </section>
+                    </a>
+                </div>
             <!-- 6-2. 정기배송 배너 -->
-            <section class="delivery_wrap">
-                <a href="#">
-                    <img src="./images/bnr004.jpg" alt="정기배송">
-                    <div class="delivery_txt">
-                        <h2>필요할 때 딱! 자동으로 찾아가는 정기배송</h2>
-                        <p>원하는 주기, 원하는 제품으로 내 삶에 꼭 맞춘 요거트 루틴을 시작하세요.</p>
-                        <div class="more_btn">
-                            <img src="./images/next002.png" alt="">
+                <div class="offer_wrap">
+                    <a href="#">
+                        <img src="./images/bnr004.jpg" alt="정기배송">
+                        <div class="offer_txt">
+                            <div class="offer_left">
+                                <h2>소중한 순간을 위한 완벽한 선물</h2>
+                                <p>건강한 재료, 정직한 제조, 그리고 깊은 맛. 룩트 선물세트는 당신의 진심을 조용히,<br>그러나 분명하게 전합니다.</p>
+                            </div>
+                            <div class="more_btn">
+                                <img src="./images/service_btn.png" alt="">
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
             </section>
             <!-- 7.비디오 카테고리 -->
             <section class="tab_wrap">
@@ -286,23 +340,23 @@
                     <div class="tab_video">
                         <video src="./video/kids.mp4" autoplay muted loop playsinline></video>
                     </div>
-                        <div class="tab_area">
-                            <ul class="tab_menu">
-                                <li class="tab">요거트&쇼핑</li>
-                                <li class="tab">단백질쉐이크</li>
-                                <li class="tab">버터</li>
-                                <li class="tab kids_tab">Kids</li>
-                            </ul>
-                            <div class="swiper tabSwiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">요거트 내용</div>
-                                    <div class="swiper-slide">단백질쉐이크 내용</div>
-                                    <div class="swiper-slide">버터 내용</div>
-                                    <div class="swiper-slide">Kids 내용</div>
-                                </div>
+                    <div class="tab_area">
+                        <ul class="tab_menu">
+                            <li class="tab">요거트&쇼핑</li>
+                            <li class="tab">단백질쉐이크</li>
+                            <li class="tab">버터</li>
+                            <li class="tab">Kids</li>
+                        </ul>
+                        <div class="swiper tabSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">요거트 내용</div>
+                                <div class="swiper-slide">단백질쉐이크 내용</div>
+                                <div class="swiper-slide">버터 내용</div>
+                                <div class="swiper-slide">Kids 내용</div>
                             </div>
                         </div>
                     </div>
+                </div>
             </section>
             <!-- 8. 레시피 배너 -->
             <section class="recipe_wrap">
@@ -321,7 +375,7 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide slide1">
                             <div class="review_card">
-                                <img src="./images/rv001.jpg" alt="단백질쉐이크 파우치 3세트">
+                                <img src="./images/rv001.jpg" alt="단백질쉐이크 파우치 3개">
                                 <div class="review_txt">
                                     <h3>룩트 단백질쉐이크 파우치 45g x 3개 (한정)</h3>
                                     <strong class="price">26,900원</strong>
@@ -340,7 +394,7 @@
                                 </div>
                             </div>
                             <div class="review_card">
-                                <img src="./images/rv002.jpg" alt="단백질쉐이크 파우치 3세트">
+                                <img src="./images/rv002.jpg" alt="단백질쉐이크 파우치 3개">
                                 <div class="review_txt">
                                     <h3>룩트 단백질쉐이크 파우치 45g x 3개 (한정)</h3>
                                     <strong class="price">26,900원</strong>
@@ -359,7 +413,7 @@
                                 </div>
                             </div>
                             <div class="review_card">
-                                <img src="./images/rv003.jpg" alt="단백질쉐이크 파우치 3세트">
+                                <img src="./images/rv003.jpg" alt="단백질쉐이크 파우치 3개">
                                 <div class="review_txt">
                                     <h3>룩트 단백질쉐이크 파우치 45g x 3개 (한정)</h3>
                                     <strong class="price">26,900원</strong>
@@ -378,7 +432,7 @@
                                 </div>
                             </div>
                             <div class="review_card">
-                                <img src="./images/rv004.jpg" alt="단백질쉐이크 파우치 3세트">
+                                <img src="./images/rv004.jpg" alt="단백질쉐이크 파우치 3개">
                                 <div class="review_txt">
                                     <h3>룩트 단백질쉐이크 파우치 45g x 3개 (한정)</h3>
                                     <strong class="price">26,900원</strong>
