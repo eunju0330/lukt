@@ -433,11 +433,9 @@ main .video_wrap .tab_layout .videoLeftSwiper {
     object-fit:cover;
     display:block;
 }
-main .video_wrap .tab_layout .videoLeftSwiper .swiper-wrapper {
-}
+main .video_wrap .tab_layout .videoLeftSwiper .swiper-wrapper {}
 main .video_wrap .tab_layout .videoLeftSwiper .swiper-wrapper .swiper-slide {}
-main .video_wrap .tab_layout .videoLeftSwiper .swiper-wrapper .swiper-slide.tab_video {
-}
+main .video_wrap .tab_layout .videoLeftSwiper .swiper-wrapper .swiper-slide.tab_video {}
 main .video_wrap .tab_layout .videoLeftSwiper .swiper-wrapper .swiper-slide.tab_video video {
     width:100%;
     height:100%;
@@ -466,32 +464,32 @@ main .video_wrap .tab_layout .tap_right .tab_contents .tab_header .tab_arrow .ta
 main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper {}
 main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper {}
 main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide {}
-main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area {}
-main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tabSwiper {}
-main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tabSwiper .swiper-wrapper {}
-main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tabSwiper .swiper-wrapper .swiper-slide {display:block;}
-main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tabSwiper .swiper-wrapper .swiper-slide a {}
-main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tabSwiper .swiper-wrapper .swiper-slide a .img_wrap {
+main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area {
+    display:flex;
+    flex-direction:column;
 }
-main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tabSwiper .swiper-wrapper .swiper-slide a .img_wrap img {}
-main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tabSwiper .swiper-wrapper .swiper-slide.yogurt_card {}
-main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tabSwiper .swiper-wrapper .swiper-slide.shake_card {}
-main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tabSwiper .swiper-wrapper .swiper-slide.butter_card {}
-main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tabSwiper .swiper-wrapper .swiper-slide.kids_card {}
-main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tabSwiper .swiper-wrapper .swiper-slide .tab_go {}
-main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tabSwiper .swiper-wrapper .swiper-slide .tab_go h2 {}
-main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tabSwiper .swiper-wrapper .swiper-slide .tab_go img {}
-main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tabSwiper .swiper-wrapper .swiper-slide p {}
-main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tabSwiper .swiper-wrapper .swiper-slide.double_card {}
-main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tabSwiper .swiper-wrapper .swiper-slide.double_card .tab_product {}
-main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tabSwiper .swiper-wrapper .swiper-slide.double_card .tab_product a {}
-main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tabSwiper .swiper-wrapper .swiper-slide.double_card .tab_product .img_wrap {
+main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_go_wrap {}
+main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_go_wrap .img_wrap {}
+main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_go_wrap .img_wrap img {}
+main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_go_wrap .tab_go {}
+main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_go_wrap .tab_go h2 {}
+main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_go_wrap .tab_go img {}
+main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_go_wrap p {}
+main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_cards {
+    display:flex;
+    gap:16px;
+    margin-top:24px;
 }
-main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tabSwiper .swiper-wrapper .swiper-slide.double_card .tab_product .img_wrap img {
+main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_cards .tab_product.double_card {
+    width:calc(50% - 8px);
+    box-sizing:border-box;
 }
-main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tabSwiper .swiper-wrapper .swiper-slide.double_card .tab_product .tab_txt {}
-main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tabSwiper .swiper-wrapper .swiper-slide.double_card .tab_product .tab_txt .product_name {}
-main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tabSwiper .swiper-wrapper .swiper-slide.double_card .tab_product .tab_txt .product_price {}
-main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tabSwiper .swiper-wrapper .swiper-slide.double_card .tab_product .tab_txt .product_price .discount {}
-main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tabSwiper .swiper-wrapper .swiper-slide.double_card .tab_product .tab_txt .product_price .price {}
+main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_cards .tab_product.double_card a {}
+main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_cards .tab_product.double_card .img_wrap {}
+main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_cards .tab_product.double_card .img_wrap img {}
+main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_cards .tab_product.double_card .tab_txt {}
+main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_cards .tab_product.double_card .tab_txt .product_name {}
+main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_cards .tab_product.double_card .tab_txt .product_price {}
+main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_cards .tab_product.double_card .tab_txt .product_price .discount {}
+main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_cards .tab_product.double_card .tab_txt .product_price .price {}
 /* 8. 레시피 배너 */

@@ -1,8 +1,9 @@
-let adSwiper = new Swiper('.adSwiper',{
+const adSwiper = new Swiper('.adSwiper',{
     direction:'horizontal',
     autoplay:{delay:1000,}
 })
-new Swiper('.saleSwiper', {
+
+const saleSwiper = new Swiper('.saleSwiper', {
     slidesPerView: 3,
     spaceBetween:17,
     navigation: {
@@ -10,20 +11,25 @@ new Swiper('.saleSwiper', {
         prevEl:'.sale_prev',
     },
 });
+
 const videoLeftSwiper = new Swiper('.videoLeftSwiper', {
     allowTouchMove:false,
     effect:'fade',
 });
-
 const videoRightSwiper = new Swiper('.videoSwiper', {
-  initialSlide:3, // Kids가 보이게
+    initialSlide:3,
     navigation:{
         nextEl:'.tab_next',
         prevEl:'.tab_prev',
     },
     on:{
         slideChange:function(){
-        videoLeftSwiper.slideTo(this.activeIndex);
+            videoLeftSwiper.slideTo(this.activeIndex);
         }
     }
+});
+document.querySelectorAll('.tab_menu .tab').forEach(function(tab, i) {
+    tab.onclick = function() {
+        videoRightSwiper.slideTo(i);
+    };
 });
