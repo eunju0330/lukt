@@ -47,7 +47,7 @@
     position:relative;
 }
 #wrap header .header_inner nav .gnb > li .lnb_depth {
-    position: absolute;
+    position:absolute;
     top:22px;
     left:-15px;
     background: #fff;
@@ -78,8 +78,9 @@ footer {}
 footer .footer_inner {
     text-align:center;
     height:700px;
-    margin:106.5px auto;
     position:relative;
+    background:#F6F6F4;
+    padding:113.5px 707px;
 }
 footer .footer_inner .footer_logo {}
 footer .footer_inner .footer_logo img {

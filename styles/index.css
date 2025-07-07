@@ -326,7 +326,11 @@ main .sale_wrap .swiper.saleSwiper .swiper-wrapper {
 }
 main .sale_wrap .swiper.saleSwiper .swiper-slide {}
 main .sale_wrap .swiper.saleSwiper .swiper-slide.sale_card {
-    width:360px;
+    width:347px;
+    margin-right:17px;
+}
+main .sale_wrap .swiper.saleSwiper .swiper-slide.sale_card:last-child {
+    margin-right:0px;
 }
 main .sale_wrap .swiper.saleSwiper .swiper-slide.sale_card a {}
 main .sale_wrap .swiper.saleSwiper .swiper-slide.sale_card a .sale_img_wrap {
@@ -638,16 +642,18 @@ main .review_wrap .swiper.reviewSwiper .swiper-wrapper .swiper-slide .review_car
 main .review_wrap .swiper.reviewSwiper .swiper-wrapper .swiper-slide .review_card .review_box {
     background:#eee;
     margin-bottom:21.5px;
-    padding:20px;
+    padding:18.5px;
     border-radius:10px;
 }
 main .review_wrap .swiper.reviewSwiper .swiper-wrapper .swiper-slide .review_card .review_box .star {
     font-weight:300;
     font-size:1rem;
     margin-bottom:8px;
+    color:#2F4A8D;
 }
 main .review_wrap .swiper.reviewSwiper .swiper-wrapper .swiper-slide .review_card .review_box p {
     font-size:0.813rem;
+    line-height:1.2;
 }
 main .review_wrap .swiper.reviewSwiper .swiper-pagination {
     position:absolute;
