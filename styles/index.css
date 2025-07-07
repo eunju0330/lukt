@@ -5,7 +5,7 @@ html,body {font-family:'Pretendard', sans-serif;}
     margin:0 auto;
     
 }
-#wrap main {background-color:#EFEFEF;}
+#wrap main {background:#F6F6F4}
 /* 1.광고배너 */
 #wrap main .ad_wrap {
     width:100%;
@@ -87,7 +87,7 @@ html,body {font-family:'Pretendard', sans-serif;}
 #wrap main .ad_wrap .swiper.adSwiper .btn_counter .next_btn img {}
 /* 2.비전배너 */
 main .vision_wrap {
-    background:url(../images/bnr001.jpg);
+    background:url(../images/vision_bnr.jpg);
     height:315px;
     position:relative;
     text-align:center;
@@ -209,7 +209,7 @@ main .best_wrap .best_list .best_card a .best_txt .product_price .price {
 }
 /* 4.신제품광고배너 */
 main .newbnr_wrap {
-    background:url(../images/bnr002.jpg);
+    background:url(../images/new_bnr.jpg);
     height:300px;
     width:1920px;
     position:relative;
@@ -420,7 +420,6 @@ main .video_wrap {
     display:flex;
     width:1280px;
     margin:164px auto 136px;
-    background:skyblue;
 }
 main .video_wrap .tab_layout {
     display:flex;
@@ -447,20 +446,39 @@ main .video_wrap .tab_layout .tap_right {
     width:509px;
 }
 main .video_wrap .tab_layout .tap_right .tab_contents {}
-main .video_wrap .tab_layout .tap_right .tab_contents .tab_header {
+main .video_wrap .tab_layout .tap_right .tab_contents .tab_top {
     display:flex;
     justify-content:space-between;
 }
-main .video_wrap .tab_layout .tap_right .tab_contents .tab_header .tab_menu {
+main .video_wrap .tab_layout .tap_right .tab_contents .tab_top .tab_menu {
     display:flex;
+    gap:15px;
+    margin-bottom:38px;
 }
-main .video_wrap .tab_layout .tap_right .tab_contents .tab_header .tab_menu .tab {}
-main .video_wrap .tab_layout .tap_right .tab_contents .tab_header .tab_menu .tab button {}
-main .video_wrap .tab_layout .tap_right .tab_contents .tab_header .tab_menu .tab.active {}
-main .video_wrap .tab_layout .tap_right .tab_contents .tab_header .tab_menu .tab.active button {}
-main .video_wrap .tab_layout .tap_right .tab_contents .tab_header .tab_arrow {}
-main .video_wrap .tab_layout .tap_right .tab_contents .tab_header .tab_arrow .tab_prev {}
-main .video_wrap .tab_layout .tap_right .tab_contents .tab_header .tab_arrow .tab_next {}
+main .video_wrap .tab_layout .tap_right .tab_contents .tab_top .tab_menu .tab {}
+main .video_wrap .tab_layout .tap_right .tab_contents .tab_top .tab_menu .tab button {
+    font-size:1.25rem;
+    font-weight:500;
+    border:none;
+    background:none;
+    padding-bottom:5px;
+    border-bottom:5px solid transparent;
+    transition:border-bottom-color 0.3s;
+}
+main .video_wrap .tab_layout .tap_right .tab_contents .tab_top .tab_menu .tab button:hover {
+    border-bottom:5px solid #FFE551;
+}
+main .video_wrap .tab_layout .tap_right .tab_contents .tab_top .tab_menu .tab button:hover::after {
+    
+}
+main .video_wrap .tab_layout .tap_right .tab_contents .tab_top .tab_menu .tab.active {}
+main .video_wrap .tab_layout .tap_right .tab_contents .tab_top .tab_menu .tab.active button {}
+main .video_wrap .tab_layout .tap_right .tab_contents .tab_top .tab_arrow {
+}
+main .video_wrap .tab_layout .tap_right .tab_contents .tab_top .tab_arrow .tab_prev {
+    margin-right:30px;
+}
+main .video_wrap .tab_layout .tap_right .tab_contents .tab_top .tab_arrow .tab_next {}
 main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper {}
 main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper {}
 main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide {}
@@ -468,28 +486,201 @@ main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapp
     display:flex;
     flex-direction:column;
 }
-main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_go_wrap {}
-main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_go_wrap .img_wrap {}
-main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_go_wrap .img_wrap img {}
-main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_go_wrap .tab_go {}
-main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_go_wrap .tab_go h2 {}
-main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_go_wrap .tab_go img {}
-main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_go_wrap p {}
+main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_go_wrap {
+    position:relative;
+}
+main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_go_wrap .img_wrap {
+}
+main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_go_wrap .img_wrap img {
+}
+main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_go_wrap .tab_go_txt {
+    position:absolute;
+    left:27px;
+    bottom:20px;
+    width:100%;
+}
+main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_go_wrap .tab_go_txt .tab_go {
+    display:flex;
+    gap:11px;
+    align-items:center;
+}
+main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_go_wrap .tab_go_txt .tab_go h2 {
+    font-size:1.875rem;
+    font-weight:500;
+    margin-bottom:13px;
+}
+main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_go_wrap .tab_go_txt .tab_go img {
+    display:block;
+    height:18px;
+    margin-top:-10px;
+}
+main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_go_wrap p {
+    font-size:0.875rem;
+}
 main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_cards {
     display:flex;
     gap:16px;
     margin-top:24px;
 }
+main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_cards .tab_product {
+}
 main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_cards .tab_product.double_card {
     width:calc(50% - 8px);
     box-sizing:border-box;
 }
-main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_cards .tab_product.double_card a {}
+main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_cards .tab_product.double_card a {
+    
+}
 main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_cards .tab_product.double_card .img_wrap {}
-main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_cards .tab_product.double_card .img_wrap img {}
-main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_cards .tab_product.double_card .tab_txt {}
-main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_cards .tab_product.double_card .tab_txt .product_name {}
-main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_cards .tab_product.double_card .tab_txt .product_price {}
-main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_cards .tab_product.double_card .tab_txt .product_price .discount {}
-main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_cards .tab_product.double_card .tab_txt .product_price .price {}
+main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_cards .tab_product.double_card .img_wrap img {
+    width:100%;
+    display:block;
+    height:auto;
+    margin-bottom:9px;
+}
+main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_cards .tab_product.double_card .tab_txt {
+}
+main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_cards .tab_product.double_card .tab_txt .product_name {
+    margin-bottom:9px;
+    font-weight:500;
+    font-size:0.875rem;
+}
+main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_cards .tab_product.double_card .tab_txt .product_price {
+    font-size:1.125rem;
+}
+main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_cards .tab_product.double_card .tab_txt .product_price .discount {
+    margin-right:13px;
+    font-weight:700;
+    color:#f00;
+}
+main .video_wrap .tab_layout .tap_right .tab_contents .videoSwiper .swiper-wrapper .swiper-slide.tab_area .tab_cards .tab_product.double_card .tab_txt .product_price .price {
+    font-weight:500;
+}
 /* 8. 레시피 배너 */
+main .recipe_wrap {
+    background:url(../images/recipe_bnr.jpg);
+    height:300px;
+    position:relative;
+    margin:0 auto;
+}
+main .recipe_wrap a {
+    position:absolute;
+    top:67px;
+    left:320px;
+}
+main .recipe_wrap a .recipe_txt {}
+main .recipe_wrap a .recipe_txt h2 {
+    font-size:2.063rem;
+    font-weight:500;
+    margin-bottom:19px;
+}
+main .recipe_wrap a .recipe_txt h3 {
+    font-size:1.375rem;
+    font-weight:300;
+    margin-bottom:41px;
+}
+main .recipe_wrap a .recipe_txt p {
+    font-size:1.125rem;
+    font-weight:300;
+    background:#222E60;
+    border-radius:50px;
+    padding:10px 20px;
+    color:#fff;
+    width:154px;
+}
+/* 9. 리뷰 */
+main .review_wrap {
+    width:1280px;
+    margin:218px auto 214px;
+}
+main .review_wrap h2 {
+    font-family:'MaruBuri',sans-serif;
+    font-weight:600;
+    font-size:1.875rem;
+    margin-bottom:22px;
+}
+main .review_wrap .swiper {
+    width:100%;
+    margin:0 auto;
+    position:relative;
+}
+main .review_wrap .swiper.reviewSwiper {}
+main .review_wrap .swiper.reviewSwiper .swiper-wrapper {}
+main .review_wrap .swiper.reviewSwiper .swiper-wrapper .swiper-slide {
+    display:flex;
+    justify-content:space-between;
+}
+main .review_wrap .swiper.reviewSwiper .swiper-wrapper .swiper-slide .review_card {
+    display:flex;
+    flex-flow:column;
+    width:300px;
+    height:430px;
+    background:#fff;
+    padding:43px 18.5px 21px;
+    border-radius:10px;
+}
+main .review_wrap .swiper.reviewSwiper .swiper-wrapper .swiper-slide .review_card img {}
+main .review_wrap .swiper.reviewSwiper .swiper-wrapper .swiper-slide .review_card .review_product {
+    display:flex;
+    margin-bottom:30px;
+    gap:11px
+}
+main .review_wrap .swiper.reviewSwiper .swiper-wrapper .swiper-slide .review_card .review_product .review_txt {
+}
+main .review_wrap .swiper.reviewSwiper .swiper-wrapper .swiper-slide .review_card .review_product .review_txt h3 {
+    margin-bottom:26.3px;
+    font-size:0.938rem;
+}
+main .review_wrap .swiper.reviewSwiper .swiper-wrapper .swiper-slide .review_card .review_product .review_txt .price {
+    font-weight:600;
+    font-size:1.125rem;
+}
+main .review_wrap .swiper.reviewSwiper .swiper-wrapper .swiper-slide .review_card .review_box {
+    background:#eee;
+    margin-bottom:21.5px;
+    padding:20px;
+    border-radius:10px;
+}
+main .review_wrap .swiper.reviewSwiper .swiper-wrapper .swiper-slide .review_card .review_box .star {
+    font-weight:300;
+    font-size:1rem;
+    margin-bottom:8px;
+}
+main .review_wrap .swiper.reviewSwiper .swiper-wrapper .swiper-slide .review_card .review_box p {
+    font-size:0.813rem;
+}
+main .review_wrap .swiper.reviewSwiper .swiper-pagination {
+    position:absolute;
+    bottom:-40px;
+    left:50%;
+    transform:translateX(-50%);
+    width:auto;
+    text-align:center;
+}
+/* 10. 카페 홍보 배너 */
+main .cafe_wrap {
+    background:url(../images/cafe_bnr.jpg);
+    height:450px;
+    position:relative;
+}
+main .cafe_wrap .cafe_bnr {
+    position:absolute;
+    top:153px;
+    left:322px;
+    display:flex;
+    gap:79px;
+}
+main .cafe_wrap .cafe_bnr .cafe_name {
+    font-family: "Playfair Display", serif;
+    font-size:2.25rem;
+    margin-top:-12px;
+}
+main .cafe_wrap .cafe_bnr .cafe_txt {
+    font-weight:300;
+}
+main .cafe_wrap .cafe_bnr .cafe_txt .address {
+    margin-bottom:36px;
+}
+main .cafe_wrap .cafe_bnr .cafe_txt .content {
+    line-height:1.75;
+}

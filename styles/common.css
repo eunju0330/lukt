@@ -1,4 +1,5 @@
 /* main, footer */
+/* main */
 #wrap header {
     position:absolute;
     top:0; left:0;
@@ -32,10 +33,13 @@
 #wrap header .header_inner nav .gnb > li {
     
 }
+#wrap header .header_inner nav .gnb > li:hover > a {
+    color:#888;
+}
 #wrap header .header_inner nav .gnb > li:hover .lnb_depth {
     display:block;
 }
-#wrap header .header_inner nav .gnb > li .yogurt_on {color:#888;}
+#wrap header .header_inner nav .gnb > li .yogurt_on {}
 #wrap header .header_inner nav .gnb > li > a {
     font-size:1.125rem;
 }
@@ -69,3 +73,49 @@
 #wrap header .header_inner .right_menu li {}
 #wrap header .header_inner .right_menu li a {}
 #wrap header .header_inner .right_menu li a img {width:22px;}
+/* footer */
+footer {}
+footer .footer_inner {
+    text-align:center;
+    height:700px;
+    margin:106.5px auto;
+    position:relative;
+}
+footer .footer_inner .footer_logo {}
+footer .footer_inner .footer_logo img {
+    margin-bottom:47px;
+}
+footer .footer_inner .footer_info {
+    margin-bottom:28px;
+}
+footer .footer_inner .footer_info li {
+    line-height:1.75;
+    font-weight:300;
+}
+footer .footer_inner .footer_info li a {
+    font-weight:400;
+}
+footer .footer_inner .footer_link {
+    margin-bottom:13px;
+}
+footer .footer_inner .footer_link a {
+    font-weight:600;
+}
+footer .footer_inner p {
+    font-weight:300;
+}
+footer .footer_inner .footer_sns {
+    margin-top:47px;
+}
+footer .footer_inner .footer_sns a {
+    margin-right:25px;
+}
+footer .footer_inner .kcp_mark {
+    position:absolute;
+    bottom:141px;
+    right:320px;
+}
+footer .footer_inner .kcp_mark img {
+    width:80px;
+    height:auto;
+}

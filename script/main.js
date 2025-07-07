@@ -28,8 +28,3 @@ const videoRightSwiper = new Swiper('.videoSwiper', {
         }
     }
 });
-document.querySelectorAll('.tab_menu .tab').forEach(function(tab, i) {
-    tab.onclick = function() {
-        videoRightSwiper.slideTo(i);
-    };
-});
