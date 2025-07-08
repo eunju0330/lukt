@@ -13,16 +13,22 @@ html,body {font-family:'Pretendard', sans-serif;}
     position:relative;
     overflow:hidden;
 }
+
 #wrap main .ad_wrap,
 #wrap main .ad_wrap .swiper.adSwiper,
 #wrap main .ad_wrap .swiper.adSwiper .swiper-wrapper {
     height:100vh;
 }
+
 #wrap main .ad_wrap .swiper {}
-#wrap main .ad_wrap .swiper.adSwiper {position:relative;}
+#wrap main .ad_wrap .swiper.adSwiper {
+    position:relative;
+}
+
 #wrap main .ad_wrap .swiper.adSwiper .swiper-wrapper {
     position:relative;
 }
+
 #wrap main .ad_wrap .swiper.adSwiper .swiper-wrapper .swiper-slide {
     position:relative;
     width:100%;
@@ -31,32 +37,45 @@ html,body {font-family:'Pretendard', sans-serif;}
     background-position:center;
     background-repeat:no-repeat;
 }
+
 #wrap main .ad_wrap .swiper.adSwiper .swiper-wrapper .swiper-slide.slide1 {
     background:url(../images/hd_slide001.jpg);
 }
+
 #wrap main .ad_wrap .swiper.adSwiper .swiper-wrapper .swiper-slide.slide2 {
     background:url(../images/hd_slide001.jpg);
 }
+
 #wrap main .ad_wrap .swiper.adSwiper .swiper-wrapper .swiper-slide .ad_txt {
     position:absolute;
     top:519px;
     left:0;
-    display:flex; align-items:flex-start;
+    display:flex;
+    align-items:flex-start;
     gap:32px;
 }
+
 #wrap main .ad_wrap .swiper.adSwiper .swiper-wrapper .swiper-slide .ad_txt .ad_line {
-    width:195px; height:1px; background:#000; margin-top:20px;
+    width:195px;
+    height:1px;
+    background:#000;
+    margin-top:20px;
 }
 
 #wrap main .ad_wrap .swiper.adSwiper .swiper-wrapper .swiper-slide .ad_txt .txt_area {}
+
 #wrap main .ad_wrap .swiper.adSwiper .swiper-wrapper .swiper-slide .ad_txt .txt_area h2 {
-    font-size:2.188rem; font-weight:600;
+    font-size:2.188rem;
+    font-weight:600;
     margin-bottom:17px;
 }
+
 #wrap main .ad_wrap .swiper.adSwiper .swiper-wrapper .swiper-slide .ad_txt .txt_area p {
-    font-size:1.375rem; font-weight:300;
+    font-size:1.375rem;
+    font-weight:300;
     line-height:180%;
 }
+
 #wrap main .ad_wrap .swiper.adSwiper .btn_counter {
     position:absolute;
     bottom:196px;
@@ -67,22 +86,30 @@ html,body {font-family:'Pretendard', sans-serif;}
     gap:10px;
     color:#000;
 }
+
 #wrap main .ad_wrap .swiper.adSwiper .btn_counter img {
     vertical-align:middle;
 }
+
 #wrap main .ad_wrap .swiper.adSwiper .btn_counter .prev_btn {}
 #wrap main .ad_wrap .swiper.adSwiper .btn_counter .prev_btn img {}
+
 #wrap main .ad_wrap .swiper.adSwiper .btn_counter .current_pg {
     font-weight:600;
     font-size:1.125rem;
 }
+
 #wrap main .ad_wrap .swiper.adSwiper .btn_counter .divider {
-    width:1px; height:13px; background:#000;
+    width:1px;
+    height:13px;
+    background:#000;
 }
+
 #wrap main .ad_wrap .swiper.adSwiper .btn_counter .total-pg {
     font-weight:300;
     font-size:1.125rem;
 }
+
 #wrap main .ad_wrap .swiper.adSwiper .btn_counter .next_btn {}
 #wrap main .ad_wrap .swiper.adSwiper .btn_counter .next_btn img {}
 /* 2.비전배너 */
@@ -326,8 +353,6 @@ main .sale_wrap .swiper.saleSwiper .swiper-wrapper {
 }
 main .sale_wrap .swiper.saleSwiper .swiper-slide {}
 main .sale_wrap .swiper.saleSwiper .swiper-slide.sale_card {
-    width:347px;
-    margin-right:17px;
 }
 main .sale_wrap .swiper.saleSwiper .swiper-slide.sale_card:last-child {
     margin-right:0px;
@@ -595,7 +620,8 @@ main .recipe_wrap a .recipe_txt p {
 /* 9. 리뷰 */
 main .review_wrap {
     width:1280px;
-    margin:218px auto 214px;
+    height:577px;
+    margin:218.75px 320px 204.25px 320px;
 }
 main .review_wrap h2 {
     font-family:'MaruBuri',sans-serif;
@@ -608,7 +634,8 @@ main .review_wrap .swiper {
     margin:0 auto;
     position:relative;
 }
-main .review_wrap .swiper.reviewSwiper {}
+main .review_wrap .swiper.reviewSwiper {
+}
 main .review_wrap .swiper.reviewSwiper .swiper-wrapper {}
 main .review_wrap .swiper.reviewSwiper .swiper-wrapper .swiper-slide {
     display:flex;
@@ -622,6 +649,7 @@ main .review_wrap .swiper.reviewSwiper .swiper-wrapper .swiper-slide .review_car
     background:#fff;
     padding:43px 18.5px 21px;
     border-radius:10px;
+    margin-bottom:73px;
 }
 main .review_wrap .swiper.reviewSwiper .swiper-wrapper .swiper-slide .review_card img {}
 main .review_wrap .swiper.reviewSwiper .swiper-wrapper .swiper-slide .review_card .review_product {
@@ -655,13 +683,14 @@ main .review_wrap .swiper.reviewSwiper .swiper-wrapper .swiper-slide .review_car
     font-size:0.813rem;
     line-height:1.2;
 }
-main .review_wrap .swiper.reviewSwiper .swiper-pagination {
-    position:absolute;
-    bottom:-40px;
-    left:50%;
-    transform:translateX(-50%);
-    width:auto;
-    text-align:center;
+main .review_wrap .swiper.reviewSwiper .swiper-pagination-bullet {
+    width:12px; height:12px;
+    border-radius:100px;
+}
+main .review_wrap .swiper.reviewSwiper .swiper-pagination-bullet-active {
+    background:#777;
+    width:28px;
+    height:12px;
 }
 /* 10. 카페 홍보 배너 */
 main .cafe_wrap {
