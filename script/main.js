@@ -16,15 +16,13 @@ const saleSwiper = new Swiper('#saleSwiper', {
 });
 
 /* 리뷰 */
-document.addEventListener('DOMContentLoaded', ()=>{
-    new Swiper('#reviewSwiper', {
-        loop:true,
-        slidesPerView:1,
-        pagination:{
-            el:'.swiper-pagination',
-            clickable:true
-            }
-        });
+new Swiper('#reviewSwiper', {
+    loop: true,
+    slidesPerView: 1, // 그대로 유지
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
 });
 
 /* 비디오 */
