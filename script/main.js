@@ -20,7 +20,7 @@ new Swiper('#reviewSwiper', {
     loop: true,
     slidesPerView: 1, // 그대로 유지
     pagination: {
-        el: '.swiper-pagination',
+        el:'.swiper-pagination',
         clickable: true,
     },
 });

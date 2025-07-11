@@ -31,12 +31,12 @@
     gap:50px; 
 }
 #wrap header .header_inner nav .gnb > li {
-    
+    position:relative;
 }
 #wrap header .header_inner nav .gnb > li:hover > a {
     color:#888;
 }
-#wrap header .header_inner nav .gnb > li:hover .lnb_depth {
+#wrap header .header_inner nav .gnb > li:hover .lnb_bg {
     display:block;
 }
 #wrap header .header_inner nav .gnb > li .yogurt_on {}
@@ -44,17 +44,16 @@
     font-size:1.125rem;
 }
 #wrap header .header_inner nav .gnb > li .lnb_bg {
-    position:relative;
-}
-#wrap header .header_inner nav .gnb > li .lnb_depth {
     position:absolute;
-    top:22px;
+    top:20px; /* 이거!!!!! */
     left:-15px;
     background: #fff;
     z-index:100;
     width:125px;
     padding:14px 14px 18px;
     display:none;
+}
+#wrap header .header_inner nav .gnb > li .lnb_depth {
 }
 #wrap header .header_inner nav .gnb > li .lnb_depth li {
     margin-bottom:15px;
