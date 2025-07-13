@@ -18,7 +18,7 @@ const saleSwiper = new Swiper('#saleSwiper', {
 /* 리뷰 */
 new Swiper('#reviewSwiper', {
     loop: true,
-    slidesPerView: 1, // 그대로 유지
+    slidesPerView: 1,
     pagination: {
         el:'.swiper-pagination',
         clickable: true,
@@ -33,4 +33,15 @@ const videoLeftSwiper = new Swiper('#videoLeftSwiper', {
 const videoSwiper = new Swiper('#videoSwiper', {
     initialSlide:3,
     slidesPerView:1,
+    allowTouchMove:false,
+});
+const tabPrev = document.querySelector('.tab_prev');
+const tabNext = document.querySelector('.tab_next');
+tabPrev.addEventListener('click', () => {
+    videoSwiper.slidePrev();
+    videoLeftSwiper.slidePrev();
+});
+tabNext.addEventListener('click', () => {
+    videoSwiper.slideNext();
+    videoLeftSwiper.slideNext();
 });

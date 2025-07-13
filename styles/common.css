@@ -45,7 +45,7 @@
 }
 #wrap header .header_inner nav .gnb > li .lnb_bg {
     position:absolute;
-    top:20px; /* 이거!!!!! */
+    top:35px;
     left:-15px;
     background: #fff;
     z-index:100;

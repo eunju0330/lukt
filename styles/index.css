@@ -245,7 +245,11 @@ main .newbnr_wrap {
     width:1920px;
     position:relative;
 }
-main .newbnr_wrap a {}
+main .newbnr_wrap a {
+    display:block;
+    width:100%;
+    height:100%;
+}
 main .newbnr_wrap a .newbnr_txt {
     position:absolute;
     top:60px; left:311px;
@@ -597,11 +601,15 @@ main .recipe_wrap {
     margin:0 auto;
 }
 main .recipe_wrap a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+main .recipe_wrap a .recipe_txt {
     position:absolute;
     top:67px;
     left:320px;
 }
-main .recipe_wrap a .recipe_txt {}
 main .recipe_wrap a .recipe_txt h2 {
     font-size:2.063rem;
     font-weight:500;
@@ -701,6 +709,11 @@ main .cafe_wrap {
     background:url(../images/cafe_bnr.jpg);
     height:450px;
     position:relative;
+}
+main .cafe_wrap a {
+    display:block;
+    width:100%;
+    height:100%;
 }
 main .cafe_wrap .cafe_bnr {
     position:absolute;
