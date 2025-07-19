@@ -39,13 +39,15 @@ html,body {font-family:'Pretendard', sans-serif;}
 }
 
 #wrap main .ad_wrap .swiper#adSwiper .swiper-wrapper .swiper-slide.slide1 {
-    background:url(../images/hd_slide001.jpg);
+    background-image:url(../images/hd_slide001.jpg);
 }
 
 #wrap main .ad_wrap .swiper#adSwiper .swiper-wrapper .swiper-slide.slide2 {
-    background:url(../images/hd_slide001.jpg);
+    background-image:url(../images/hd_slide002.jpg);
 }
-
+#wrap main .ad_wrap .swiper#adSwiper .swiper-wrapper .swiper-slide.slide3 {
+    background-image:url(../images/hd_slide003.jpg);
+}
 #wrap main .ad_wrap .swiper#adSwiper .swiper-wrapper .swiper-slide .ad_txt {
     position:absolute;
     left:227px;
@@ -502,7 +504,8 @@ main .video_wrap .tab_layout .tap_right .tab_contents .tab_top .tab_menu .tab bu
     border-bottom:5px solid transparent;
     transition:border-bottom-color 0.3s;
 }
-main .video_wrap .tab_layout .tap_right .tab_contents .tab_top .tab_menu .tab button:hover {
+main .video_wrap .tab_layout .tap_right .tab_contents .tab_top .tab_menu .tab button:hover,
+main .video_wrap .tab_layout .tap_right .tab_contents .tab_top .tab_menu .tab button.active {
     border-bottom:5px solid #FFE551;
 }
 main .video_wrap .tab_layout .tap_right .tab_contents .tab_top .tab_menu .tab button:hover::after {
