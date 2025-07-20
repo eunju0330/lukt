@@ -1,7 +1,7 @@
 html,body {font-family:'Pretendard', sans-serif;}
 #wrap {
     width:100%;
-    max-width:1920px;
+    min-width:1920px; /*  */
     margin:0 auto;
     
 }
@@ -303,7 +303,7 @@ main .sale_wrap .sale_left h2 {
 main .sale_wrap .sale_left .sale_select {
     display:flex;
     flex-direction:column;
-    gap:21px;
+    gap:30px;
 }
 main .sale_wrap .sale_left .sale_select button {
     font-size:1.25rem;
@@ -738,4 +738,30 @@ main .cafe_wrap .cafe_bnr .cafe_txt .address {
 }
 main .cafe_wrap .cafe_bnr .cafe_txt .content {
     line-height:1.75;
+}
+
+.popup_bg {
+    position:fixed; left:0; top:0;
+    z-index:50;
+    background-color:rgba(0,0,0,0.6);
+    height:100vh; width:100%;
+    display:none;
+}
+.popup_bg .popup {
+    position: absolute;
+    left:50%;
+    top:50%;
+    z-index:51;
+    width:700px;
+    height:80vh;
+    transform: translate(-50%, -50%);
+    overflow:auto; 
+}
+.popup_bg .close-btn {
+    position:absolute;
+    top:10px; right:10px;
+    font-size:24px;
+    background:transparent;
+    border:none;
+    cursor:pointer;
 }
