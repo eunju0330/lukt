@@ -45,7 +45,11 @@
 }
 #wrap header .header_inner nav .gnb > li .lnb_bg {
     position:absolute;
+<<<<<<< HEAD
     top:20px;
+=======
+    top:35px;
+>>>>>>> 2021442db397fe12d41a2fab5b4592d61e0a3a3e
     left:-15px;
     background: #fff;
     z-index:100;
