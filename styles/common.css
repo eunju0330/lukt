@@ -34,7 +34,7 @@
     position:relative;
 }
 #wrap header .header_inner nav .gnb > li:hover > a {
-    color:#888;
+    color:#585858;
 }
 #wrap header .header_inner nav .gnb > li:hover .lnb_bg {
     display:block;
@@ -45,11 +45,7 @@
 }
 #wrap header .header_inner nav .gnb > li .lnb_bg {
     position:absolute;
-<<<<<<< HEAD
-    top:20px;
-=======
-    top:35px;
->>>>>>> 2021442db397fe12d41a2fab5b4592d61e0a3a3e
+    top:30px;
     left:-15px;
     background: #fff;
     z-index:100;
